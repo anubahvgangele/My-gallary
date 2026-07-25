@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+   
+}
+.container{
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif; 
+
+}
+h1{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    
+     
+}
+.gallary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.card{
+    width: 25%;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    filter: grayscale(100%);
+    
+}
+.card img{
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 2px #333;
+    height: 100%;
+    object-fit: cover;
+  
+
+}
+.card:hover{
+    transform: scale(1.03);
+    transition: transform 0.5s ease;
+    filter: drop-shadow(0 0 10px #333)
+
+}
+.card figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(90deg,rgba(0,0,0,0.5) 0%,rgba(255,255,255,255));
+}
+
+.card:hover figcaption{
+    opacity: 1;
+}
+
