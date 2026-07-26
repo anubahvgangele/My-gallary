@@ -1,2 +1,0 @@
-this is my file one for git cource
-add content to file onec.

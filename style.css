@@ -73,3 +73,44 @@ h1{
     opacity: 1;
 }
 
+@media (max-width: 1023px){
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    .card{
+        width: calc(50% - 20px);
+    }
+
+}
+
+/* ==========================
+   Mobile (up to 767px)
+========================== */
+
+@media (max-width: 767px){
+
+    .container{
+        padding: 15px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .gallary{
+        gap: 15px;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .card figcaption{
+        opacity: 1;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+}
